@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="stylesheet" href="./clearStyle.css" />
+    <link rel="stylesheet" href="./shuati/iconfont.css" />
+    <title>BOSS直聘-417刘亮</title>
+    <style>
+      body {
+        background: #fff;
+      }
+
+      .icon {
+        width: 1em;
+        height: 1em;
+        overflow: hidden;
+      }
+
+      .switch {
+        padding-left: 22.5px;
+        line-height: 90px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+      }
+
+      .switch span {
+        font-size: 37.5px;
+
+        padding: 15px;
+        font-weight: bold;
+      }
+
+      #fm > div {
+        height: 57px;
+        line-height: 90px;
+        display: flex;
+        align-items: center;
+        margin-top:15px;
+      }
+
+      #fm > div:nth-of-type(4) input {
+        border: none;
+        background-color: rgb(175 216 255);
+        height: 64px;
+        width: 100%;
+        color: #70652b;
+        font-weight: bold;
+        border-radius: 45px;
+        font-size: 16px;
+      }
+
+      .input {
+        color: #000;
+        height: 0;
+        border: none;
+        border-bottom: 2px solid #e6e1e1;
+        padding: 26.5px;
+        width: 80%;
+        outline: none;
+        font-size: 21.75px;
+        margin-top: 5px;
+      }
+
+      .input::placeholder {
+        color: #aaa;
+        font-size:16px;
+      }
+
+      #fm > div:nth-of-type(4) {
+        padding: 4vw;
+      }
+
+      #fm > div:nth-of-type(1) {
+        margin-left: 4vw;
+      }
+
+      #fm > div:nth-of-type(2) {
+        margin-left: 4vw;
+      }
+
+
+      form {
+        margin-bottom: 150px;
+      }
+
+      .a {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+
+      h2 {
+        margin-left: 24px;
+      }
+    </style>
+  
+  </head>
+  <body>
+    <div class="switch">
+      <h2>BOSS直聘</h2>
+    </div>
+    <div id="fm">
+      <div>
+        <input
+          type="text"
+          name="user"
+          id="user"
+          class="input"
+          placeholder="手机号/BOSS/邮箱"
+        />
+      </div>
+      <div>
+        <input
+          type="password"
+          name="pwd"
+          id="pwd"
+          class="input"
+          placeholder="密码"
+        />
+      </div>
+      <div></div>
+      <div>
+        <input type="submit" value="确认登录" id="sub" />
+      </div>
+    </div>
+
+    <div class="a">
+      <span>手机验证码登录</span>
+      <span>忘记密码？</span>
+    </div>
+
+    <script async>
+      //   获取dom元素
+      const sub = document.querySelector("#sub");
+      const user = document.querySelector("#user");
+      const password = document.querySelector("#pwd");
+      // 定义账号密码
+      const keyword = "123";
+      const pwd = "123";
+
+      sub.addEventListener("click", () => {
+        console.log(String(user.value) + password.value);
+        if (String(user.value) === keyword && String(password.value) === pwd) {
+          window.location.replace("./home.html");
+        } else {
+          window.alert("账号密码输入不正确！");
+        }
+      });
+    </script>
+  </body>
+</html>

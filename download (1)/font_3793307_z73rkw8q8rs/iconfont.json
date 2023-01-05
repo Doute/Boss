@@ -1,0 +1,72 @@
+{
+  "id": "3793307",
+  "name": "taobao",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "630128",
+      "name": "照相机",
+      "font_class": "zhaoxiangji",
+      "unicode": "e663",
+      "unicode_decimal": 58979
+    },
+    {
+      "icon_id": "1345229",
+      "name": "二维码",
+      "font_class": "erweima2",
+      "unicode": "e61a",
+      "unicode_decimal": 58906
+    },
+    {
+      "icon_id": "36022",
+      "name": "tmall",
+      "font_class": "tmall",
+      "unicode": "e6cf",
+      "unicode_decimal": 59087
+    },
+    {
+      "icon_id": "77191",
+      "name": "二维码",
+      "font_class": "erweima",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "6078865",
+      "name": "红包-01",
+      "font_class": "hongbao-",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "6151216",
+      "name": "map",
+      "font_class": "map",
+      "unicode": "e7f3",
+      "unicode_decimal": 59379
+    },
+    {
+      "icon_id": "8288979",
+      "name": "二维码",
+      "font_class": "erweima1",
+      "unicode": "e867",
+      "unicode_decimal": 59495
+    },
+    {
+      "icon_id": "24111568",
+      "name": "饿了么",
+      "font_class": "elemo",
+      "unicode": "fad8",
+      "unicode_decimal": 64216
+    },
+    {
+      "icon_id": "25672383",
+      "name": "饿了么",
+      "font_class": "elemo1",
+      "unicode": "fee2",
+      "unicode_decimal": 65250
+    }
+  ]
+}

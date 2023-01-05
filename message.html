@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./css/clearStyle.css" />
+  <link rel="stylesheet" href="./download (1)/font_3793307_z73rkw8q8rs/iconfont.css" />
+  <link rel="stylesheet" href="./shuati/iconfont.css" />
+  <link rel="stylesheet" href="./download/font_3802615_m4g7juxs1s7/iconfont.css" />
+  <link rel="stylesheet" href="./swiper-7.2.0/swiper-7.2.0/swiper/swiper-bundle.min.css" />
+  <script src="./swiper-7.2.0//swiper-7.2.0/swiper/swiper-bundle.min.js"></script>
+  <script src="./shuati/iconfont.js"></script>
+  <script src="./download (3)/font_3812726_5p8o8nam1gq/iconfont.js"></script>
+  <title>BOSS直聘-417刘亮</title>
+  <style>
+    /* footer */
+    .footer {
+      position: fixed;
+      height:69.5px;
+      width: 100%;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 9;
+    }
+
+    .footer ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .footer a {
+      font-weight: border;
+      flex: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer a {
+      font-size: 20px;
+      line-height: 0;
+    }
+
+    .icon {
+      width: 2em;
+      height: 2em;
+      overflow: hidden;
+      margin-bottom: 2vw;
+    }
+
+    #header {
+      background-color: #fff;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #header>div {
+      display: flex;
+    }
+
+    #header .m1 {
+      margin: 8px 16px;
+      padding: 8px 16px;
+      border-radius: 16px;
+      /* border: 1px solid; */
+      background: #f4f4f4;
+    }
+    #header .m1 i{
+      color: #ccc;
+      margin-right: 8px;
+    }
+    #header .t1 span:nth-child(1){
+      font-size: 20.8px; 
+      font-weight: bold;
+       color: #000
+    }
+    #header .t1 span:nth-child(2){
+     margin-left: -17px;
+    }
+    #header .t1 span:nth-child(3){
+     margin-left: 334px;
+    }
+    #header .b1 span:nth-child(1){
+      font-weight: bold; 
+      color: #000;
+    }
+
+
+    #header input {
+      border: none;
+      background: #f4f4f4;
+      outline: none;
+    }
+
+    #header input::placeholder {
+      color: #ccc;
+      font-size: 9.6px;
+    }
+
+    #header span {
+      color: #aaa;
+      font-size: 16px;
+      padding: 16px;
+      font-weight: bold;
+    }
+
+    #main {
+      margin-top: 160px;
+    }
+
+    #main .jlist img {
+      width: 64px;
+      height: 56px;
+      border-radius: 50%;
+      margin-right: 16px;
+    }
+
+    #main .jlist {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #main .jlist li {
+      padding-left: 16px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+    }
+
+    #main .jlist li>div {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    #main .jlist li>div>div {
+      line-height: 32px;
+      display: flex;
+      align-items: center;
+    }
+    #main .jlist li>div>div>span:nth-child(1){
+      font-size: 16px;
+      font-weight: bold;
+    }
+    #main .jlist li>div>div>span:nth-child(2){
+      margin-right: 128px;
+      padding-left: 9px;
+    }
+    
+
+    .spe {
+      color: #ccc;
+      padding-right: 32px;
+    }
+
+    .swiper {
+      margin-top: 32px;
+      margin-bottom: 12px;
+    }
+
+    .swiper img {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div id="header">
+      <div class="t1">
+        <span >聊天</span>
+        <span >互动</span>
+        <span class="iconfont icon-laba"></span>
+      </div>
+      <div class="m1">
+        <i class="iconfont icon-sousuo"></i>
+        <input type="text" placeholder="搜索联系人/聊天记录" />
+      </div>
+      <div class="b1">
+        <span >全部</span>
+        <span>我发起</span>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div id="main">
+      <ul class="jlist">
+        <li>
+          <img src="./img/1.jpg" alt="" />
+          <div>
+            <div>
+              <span >曹先生</span>
+              <span class="spe">杭州小金</span>
+              <span class="spe">11月31号</span>
+            </div>
+            <div>对方已同意，您的附件简历</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="./img/12.jpg"  />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/13.jpg"  />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/14.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/15.jpg" />
+      </div>
+      <div class="swiper-slide">
+        <img src="./img/16.jpg"  />
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <footer>
+      <div class="footer">
+        <ul>
+          <a id="home" href="./home.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-gongwenbao"></use>
+            </svg>
+            <span>职位</span>
+          </a>
+          <a>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-shoushi1"></use>
+            </svg>
+            <span>有了</span>
+          </a>
+          <a id="xiaoxi" href="./message.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-xiaoxi"></use>
+            </svg>
+            <span>消息</span>
+          </a>
+          <a id="mine" href="./mine.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-wode"></use>
+            </svg>
+            <span>我的</span>
+          </a>
+        </ul>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // swiper
+    var mySwiper = new Swiper(".swiper", {
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+      loop: true,
+      autoplay: true,
+    });
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var jarr = JSON.parse(this.responseText);
+        //把服务器端的数据（字符串）变成数组
+        insert(jarr);/* 自定义函数 */
+        console.log(typeof jarr);
+      }
+    };
+    xhttp.open("GET", "http://rap2api.taobao.org/app/mock/308910/LLImg", true);
+    xhttp.send();
+
+    function insert(jarr) {
+      var jlist = document.querySelector(".jlist");
+      jarr.forEach(function (v, i) {
+        var nli = document.createElement("li");
+        //创建一个html元素li
+        nli.innerHTML = `
+        <img src="${v.img}" alt="">
+            <div>
+              <div>
+                <span style="font-size: 1rem;
+                font-weight: bold;">${v.name}</span>
+                <span class="spe" style="flex: 1; padding-left: 2vw;">${v.gonsi}</span>
+                <span class="spe">${v.time}</span>
+              </div>
+              <div>对方已同意，您的附件简历</div>
+            </div>
+        `;
+        //反引号es6内部可包括引号和变量${}
+        //在jlist的内部的最后增加元素
+        jlist.appendChild(nli);
+      });
+    }
+
+
+
+
+
+  </script>
+</body>
+
+</html>

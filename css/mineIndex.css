@@ -1,0 +1,66 @@
+body {
+    background-color: #f9f9f9;
+}
+
+
+.header {
+    background: linear-gradient(45deg, #d6ecec, transparent);
+    z-index: 9;
+    top: 0;
+    display: flex;
+}
+
+.header .topInfo {
+    margin-top: 20.4908px;
+    margin-left: 307px;
+}
+
+.header .topInfo span {
+    margin-left: 20.4908px;
+}
+.main .creaList {
+    background: #fff;
+}
+.main .creaList ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .creaList img {
+    width: 2.5rem;
+    display: block;
+    border: none;
+    height: 2.5rem;
+    margin-left: 2rem;
+}
+.main .creaList ul li span:nth-of-type(2) {
+    font-size: 15.36px;
+    margin-top: 5.122px;
+    letter-spacing: 2px;
+}
+
+.main .creaList ul li {
+    line-height: 30px;
+    width: 25%;
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .creaList ul li svg {
+    font-size: 20px;
+    color: #000;
+}
+
+.main .creation .creaTp {
+    background: #fff;
+    display: flex;
+    line-height: 67.5px;
+    font-size: 22.5px;
+    font-weight: bold;
+    padding: 8px;
+}
+.main .creation .creaTp span:nth-of-type(1) {
+    font-size: 20.5px;
+    width: 73%;
+}

@@ -1,0 +1,30 @@
+{
+  "id": "3806353",
+  "name": "l",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1137793",
+      "name": "会员",
+      "font_class": "huiyuan",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
+      "icon_id": "10487554",
+      "name": "会员",
+      "font_class": "huiyuan1",
+      "unicode": "e696",
+      "unicode_decimal": 59030
+    },
+    {
+      "icon_id": "11372716",
+      "name": "我的",
+      "font_class": "wode",
+      "unicode": "e8bb",
+      "unicode_decimal": 59579
+    }
+  ]
+}

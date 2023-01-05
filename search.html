@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./css/clearStyle.css" />
+  <link rel="stylesheet" href="./download (1)/font_3793307_z73rkw8q8rs/iconfont.css" />
+  <link rel="stylesheet" href="./shuati/iconfont.css" />
+  <link rel="stylesheet" href="./download/font_3802615_m4g7juxs1s7/iconfont.css" />
+  <script src="./shuati/iconfont.js"></script>
+  <script src="./download (3)/font_3812726_5p8o8nam1gq/iconfont.js"></script>
+  <script src="./footer.js" async></script>
+  <title>BOSS直聘-417刘亮</title>
+  <style>
+    .m1 {
+      margin: 8px 16px;
+      padding: 8px 16px;
+      border-radius: 16px;
+      background: #f4f4f4;
+      width: 344px;
+    }
+
+    .m1 input {
+      border: none;
+      background: #f4f4f4;
+      outline: none;
+    }
+
+    .m1 input::placeholder {
+      color: #aaa;
+      font-size: 9.6px;
+    }
+
+    .a {
+      margin-top: 16px;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav span:nth-child(1) {
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 262px;
+    }
+
+    .nav span {
+      padding: 15px;
+    }
+
+    .nav span:nth-child(2) {
+      padding: 16px 7.5px;
+    }
+
+    .last {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .last>li {
+      font-size: 16.5px;
+      background: #f4f4f4;
+      padding: 13.5px;
+      margin: 15px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="a">
+    <div class="m1">
+      <i class="iconfont icon-sousuo" style="color: #ccc; margin-right: 0.5rem"></i>
+      <input type="text" placeholder="搜索联系人/聊天记录" />
+    </div>
+    <span style="font-size: 1rem" id="quxiao">取消</span>
+  </div>
+  <div class="nav">
+    <span> 搜索发现</span>
+    <span class="iconfont icon-jiazai_shuaxin"></span>
+    <span>换一批</span>
+  </div>
+  <ul class="last jlist">
+    <!-- <li>html工程师</li>
+      <li>web前端全栈工程师</li>
+      <li>前端node</li>
+      <li>wrb前端</li>
+      <li>web前端开发</li> -->
+  </ul>
+
+  <script>
+    const quxiao = document.querySelector("#quxiao");
+    quxiao.addEventListener("click", () => {
+      window.location.replace("./home.html");
+    });
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var jarr = JSON.parse(this.responseText);
+        //把服务器端的数据（字符串）变成数组
+        insert(jarr);/* 自定义函数 */
+        console.log(typeof jarr);
+      }
+    };
+    xhttp.open("GET", "http://rap2api.taobao.org/app/mock/308910/LL", true);
+    xhttp.send();
+
+    function insert(jarr) {
+      var jlist = document.querySelector(".jlist");
+      jarr.forEach(function (v, i) {
+        var nli = document.createElement("li");
+        //创建一个html元素li
+        nli.innerHTML = `
+        <p>${v.content}</p>
+        `;
+        //反引号es6内部可包括引号和变量${}
+        //在jlist的内部的最后增加元素
+
+        jlist.appendChild(nli);
+      });
+    }
+  </script>
+</body>
+
+</html>

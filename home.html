@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./css/clearStyle.css" />
+  <link rel="stylesheet" href="./download (1)/font_3793307_z73rkw8q8rs/iconfont.css" />
+  <link rel="stylesheet" href="./shuati/iconfont.css" />
+  <link rel="stylesheet" href="./swiper-7.2.0/swiper-7.2.0/swiper/swiper-bundle.min.css" />
+  <script src="./swiper-7.2.0//swiper-7.2.0/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./download/font_3802615_m4g7juxs1s7/iconfont.css" />
+  <script src="./download (3)/font_3812726_5p8o8nam1gq/iconfont.js"></script>
+  <title>Boss直聘-417刘亮</title>
+  <style>
+    /* header */
+    #header {
+      width: 100%;
+      align-items: center;
+      position: fixed;
+      height: 6rem;
+      background: #00bebd;
+      display: flex;
+      color: #fff;
+
+    }
+
+    #header span {
+      color: #fff;
+      margin: 2vw;
+    }
+
+    #header .he {
+      font-size: 1.3rem;
+    }
+    #header span:nth-child(3){
+      border: 1px solid #fff;
+      padding: 8.55px;
+    }
+
+    /* main */
+    #main #card>div {
+      margin-top: 16px;
+      width: 100%;
+      align-items: center;
+      display: flex; 
+    }
+    #main #card>div:nth-of-type(1){
+      justify-content: space-between;
+    }
+    #card {
+      padding-right: 32px;
+      padding-left: 30px;
+      border-bottom: 15px solid #f4f4f4;
+      padding-bottom: 16px;
+    }
+
+    #main #card>div img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+
+    #main #card .two {
+      justify-content: flex-start;
+    }
+
+    #main #card .two span {
+      padding: 7.5px;
+      background: #f4f4f4;
+      font-size: 7.5px;
+      margin-right: 16px;
+    }
+
+    #main #card .three {
+      justify-content: flex-start;
+      color: #959595;
+      margin-right: 16px;
+    }
+
+    #main #card .three span {
+      margin-right: 16px;
+      font-size: 22.5px;
+    }
+
+    #main #card .last {
+      font-size: 7.5px;
+    }
+
+    #main #card .last span {
+      margin-right: 16px;
+    }
+
+    #main .tc #card:last-child {
+      margin-bottom: 60px;
+    }
+
+    /* footer */
+    .footer {
+      position: fixed;
+      height: 68.5px;
+      width: 100%;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 9;
+    }
+
+    .footer ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    .footer a {
+      font-weight: border;
+      flex: 20%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .footer a {
+      font-size: 20px;
+      line-height: 0;
+    }
+
+
+    .icon {
+      width: 2em;
+      height: 2em;
+      overflow: hidden;
+      margin-bottom: 2vw;
+    }
+
+
+
+    .tt {
+      z-index: 1;
+      top: 80px;
+      background: #fff;
+      position: fixed;
+      width: 100vw;
+      display: flex;
+      overflow: auto;
+    }
+
+    /* 对于谷歌/safari/edge 作导航条隐藏 */
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    .tt>span {
+      display: block;
+      padding: 15px 0;
+      font-weight: bold;
+      font-size: 18px;
+      height: 100%;
+      width: 15vw;
+      color: #959595;
+      margin-left: 30px;
+    }
+
+    .tt .cur {
+      border-bottom: 1px solid #0ba396;
+      color: #000;
+    }
+
+    .tc {
+      display: none;
+      font-size: 16px;
+    }
+
+    .show {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .tc>div {
+      margin-top: 15px;
+      width: 100%;
+    }
+    .tc #card:nth-child(1){
+      margin-top: 192px;
+    }
+    .tc #card .one span:nth-child(1){
+      font-size: 25.2px; 
+      font-weight: bold;
+    }
+    .tc #card .one span:nth-child(2){
+      color: #008c8c
+    }
+    .tc #card .last span:nth-child(2){
+     margin-left: 3px;
+     padding-right: 50px;
+
+    }
+    .tc #card .last span:nth-child(3){
+      color: #959595
+    }
+    .tc #card .last span:nth-child(4){
+      color: #959595
+    }
+    .tc #card .last span:nth-child(5){
+      color: #959595
+    }
+
+    .tuijian {
+      background: #fff;
+      top: 126.4px;
+      position: fixed;
+      width: 100%;
+      border-bottom: 1px solid #959595;
+      display: flex;
+      align-items: center;
+    }
+
+    .tuijian span {
+      color: #959595;
+      margin: 2vw;
+    }
+    .tuijian span:nth-of-type(3){
+      margin-right: 171px;
+    }
+
+    .tuijian .didian {
+      background: #f4f4f4;
+      padding: 2vw;
+      border-radius: 1vw;
+    }
+
+    #header span:nth-child(2) {
+      margin-right: 200px;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <div id="content">
+    <header>
+      <div id="header">
+        <span class="he">实习</span>
+        <span class="he">全职</span>
+        <span>学生版</span>
+        <span class="iconfont icon-sousuo" id="suo"></span>
+      </div>
+    </header>
+    <main>
+      <div id="main">
+        <div class="tab">
+          <div class="tt">
+            <span class="cur">Go</span>
+            <span>web</span>
+            <span>Java</span>
+            <span>.Net</span>
+            <span>golang</span>
+            <span>C++</span>
+            <span>python</span>
+            <span>UI/UE</span>
+            <span>C#</span>
+          </div>
+          <div class="tuijian">
+            <span>推荐</span>
+            <span>附近</span>
+            <span>最新</span>
+            <span class="didian">大连</span>
+            <span class="didian">筛选</span>
+          </div>
+          <div class="tc show">
+            <div id="card">
+              <div class="one">
+                <span>前端开发-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小李-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小李-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span >150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小孙-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span >150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小刘-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span >150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小王-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span >150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小王-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小张-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小贺-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+            <div id="card">
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小孙-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span >前端开发-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小艺-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span >Java-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小龙-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span >.Net实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小小-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span >golang-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小安-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span >python-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小小-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span >python-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小小-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span >UI/UE-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/1.jpg" />
+                <span >小小-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+          <div class="tc">
+            <div id="card" >
+              <div class="one">
+                <span>C#-实习</span>
+                <span>150-200元/天</span>
+              </div>
+              <div class="two">
+                <span>5天</span>
+                <span>4个月</span>
+                <span>本科</span>
+                <span>前端开发</span>
+              </div>
+              <div class="three">
+                <span>淘麦郎</span>
+                <span>未融资</span>
+                <span>100-499人</span>
+              </div>
+              <div class="last">
+                <img src="./img/3.jpg" />
+                <span >小小-人事专员</span>
+                <span >雁塔区</span>
+                <span >高新软件园</span>
+                <span >x</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footer">
+        <ul>
+          <a id="home" href="./home.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-gongwenbao"></use>
+            </svg>
+            <span>职位</span>
+          </a>
+          <a>
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-shoushi1"></use>
+            </svg>
+            <span>有了</span>
+          </a>
+          <a id="xiaoxi" href="./message.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-xiaoxi"></use>
+            </svg>
+            <span>消息</span>
+          </a>
+          <a id="mine" href="./mine.html">
+            <svg class="icon" aria-hidden="true">
+              <use xlink:href="#icon-wode"></use>
+            </svg>
+            <span>我的</span>
+          </a>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <script>
+    const suo = document.querySelector("#suo");
+    suo.addEventListener("click", () => {
+      window.location.replace("./search.html");
+    });
+    // tab选项卡
+    var t = document.querySelectorAll(".tab");
+
+    for (var i = 0; i < t.length; i++) {
+      tabs(t[i]);
+    }
+
+    function tabs(tab) {
+      var tt = tab.getElementsByClassName("tt")[0];
+      var span = tt.querySelectorAll("span");
+      var tc = tab.querySelectorAll(".tc");
+
+      for (var i = 0; i < span.length; i++) {
+        span[i].index = i;
+        span[i].onmouseup = function () {
+          //先把所有的span去掉cur类，把所有的tc都隐藏
+          for (var j = 0; j < span.length; j++) {
+            span[j].classList.remove("cur");
+            tc[j].style.display = "none";
+          }
+          //事件内部不使用i，使用this
+          this.classList.add("cur"); //加入cur
+          tc[this.index].style.display = "flex";
+        };
+      }
+    }
+  </script>
+</body>
+
+</html>
