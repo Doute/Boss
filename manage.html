@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="./css//clearStyle.css" />
+  <link rel="stylesheet" href="./download (1)/font_3793307_z73rkw8q8rs/iconfont.css" />
+  <link rel="stylesheet" href="./shuati/iconfont.css" />
+  <title>BOSS直聘-417刘亮</title>
+  <style>
+    .icon {
+      width: 1em;
+      height: 1em;
+      overflow: hidden;
+    }
+
+    .switch {
+      padding-left: 15px;
+      line-height: 40px;
+      display: flex;
+      flex-wrap: nowrap;
+    }
+
+    .switch>span {
+      font-size: 25px;
+      flex: 1;
+      padding: 10px;
+      font-weight: bold;
+
+    }
+
+    .switch a {
+      font-size: 25px;
+      width: 37%;
+      padding: 10px;
+      font-weight: bold;
+
+    }
+    .switch a span:nth-of-type(1) {
+      font-size: 45px; 
+      color: #5f6467;
+    }
+    .switch span:nth-of-type(2) {
+      flex: 6;
+      font-size: 33.75px;
+    }
+
+
+
+    .list {
+      align-items: center;
+      padding-left: 22.5px;
+      line-height: 30px;
+      display: flex;
+      flex-wrap: nowrap;
+      border: 1px solid #eee;
+    }
+
+    .list span {
+      font-size: 15px;
+
+      padding: 10px;
+      font-weight: bold;
+    }
+
+    .list span:nth-child(1) {
+      flex: 1;
+    }
+
+    .list span:last-child {
+      color: #ccc;
+    }
+
+    .footer { 
+      margin: 30px;
+      font-size: 16px;
+      line-height: 40px;
+      font-weight: bold;
+      border-radius: 15px;
+
+      display: flex;
+      border: 2px solid;
+      color: #000;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="content">
+    <div class="switch">
+      <a href="./mine.html"><span class="iconfont icon-zuojiantou1" ></span></a>
+      <span>设置</span>
+    </div>
+    <header>
+
+      <main>
+        <div id="main" class="jlist">
+          <div class="list">
+            <span>账号与安全中心</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>通知与提醒</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>隐私保护</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>主题显示</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>消息推送</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>打招呼语</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>无障碍求职</span>
+            <span> 未开启> </span>
+          </div>
+
+
+          <div class="list">
+            <span>学号：20001010417</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>刘亮</span>
+            <span> > </span>
+          </div>
+          <div class="list">
+            <span>切换身份</span>
+            <span>求职者></span>
+          </div>
+          <div class="list">
+            <span>版本更新</span>
+            <span> > </span>
+          </div>
+
+
+        </div>
+      </main>
+      <footer>
+        <div class="footer">
+          <span>退出登录</span>
+        </div>
+      </footer>
+  </div>
+
+  <script>
+
+    const footer = document.querySelector('.footer')
+    footer.addEventListener('click', () => {
+      window.location.replace('./login.html')
+    })
+
+   
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+      if (this.readyState == 4 && this.status == 200) {
+        var jarr = JSON.parse(this.responseText);
+        //把服务器端的数据（字符串）变成数组
+        insert(jarr);/* 自定义函数 */
+        console.log(typeof jarr);
+      }
+    };
+    xhttp.open("GET", "http://rap2api.taobao.org/app/mock/308910/LL3", true);
+    xhttp.send();
+
+    function insert(jarr) {
+      var jlist = document.querySelector(".jlist");
+    jarr.forEach(function (v, i) {
+      var nli = document.createElement("div");
+      nli.classList.add('list');
+      //创建一个html元素li
+      nli.innerHTML = `
+        <span>${v.content}</span>
+            <span> ${v.ot} </span>
+        `;
+      //反引号es6内部可包括引号和变量${}
+      //在jlist的内部的最后增加元素
+      jlist.appendChild(nli);
+    });
+  } 
+  </script>
+</body>
+
+</html>
